@@ -8,11 +8,11 @@ IBM Data Science Experience (DSX) is a comprehensive Data Science development fr
 
 ### Exercise Summary
 
-- [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/demo/blob/master/tennis/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-- [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/demo/blob/master/tennis/Readme.md#exercise-2-creating-a-model-using-model-builder)
-- [Exercise 3: Creating a flow using Canvas](https://github.com/mlhubca/demo/blob/master/tennis/Readme.md#exercise-3-creating-a-flow-using-canvas)
-- [Exercise 4: Adding visualizations to the notebook](https://github.com/mlhubca/demo/blob/master/tennis/Readme.md#exercise-4-adding-visualizations-to-the-notebook)
-- [Exercise 5: Automating algnorthm selection using CADS (IBM Cognitive Assistant for Data Scientists)](https://github.com/mlhubca/demo/blob/master/tennis/Readme.md#exercise-5-automating-algnorthm-selection-using-cads-ibm-cognitive-assistant-for-data-scientists)
+- [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-1-creating-a-model-using-a-notebook)
+- [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-2-creating-a-model-using-model-builder)
+- [Exercise 3: Creating a flow using Canvas](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-3-creating-a-flow-using-canvas)
+- [Exercise 4: Adding visualizations to the notebook](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-4-adding-visualizations-to-the-notebook)
+- [Exercise 5: Automating algnorthm selection using CADS (IBM Cognitive Assistant for Data Scientists)](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-5-automating-algnorthm-selection-using-cads-ibm-cognitive-assistant-for-data-scientists)
 
 It's suggested that you go through these exercises in order.
 
@@ -55,7 +55,7 @@ You and a friend generally meet up in the morning at a local tennis court to pla
 - Sign up and login to DSX: https://datascience.ibm.com/
 - Create a new project "Play Tennis"
 - Download file "tennis.csc" to your local machine
-    - Go to <https://github.com/mlhubca/demo/blob/master/tennis/tennis.csv>
+    - Go to <https://github.com/mlhubca/lab/blob/master/tennis/tennis.csv>
     - In the top right, righ click the Raw button
     - Save as...
 - Upload file "tennis.csv" to project "Play Tennis"
@@ -171,7 +171,7 @@ new_predictions.select("predictedLabel").show()
 
 ## Exercise 2: Creating a model using model builder
 
-![](https://github.com/mlhubca/demo/blob/master/tennis/images/ModelBuilder.png)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/ModelBuilder.png)
 
 1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
 2) On the "New model" page
@@ -199,7 +199,7 @@ new_predictions.select("predictedLabel").show()
 
 ## Exercise 3: Creating a flow using Canvas
 
-![](https://github.com/mlhubca/demo/blob/master/tennis/images/PlayTennisFlow.png)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/PlayTennisFlow.png)
 
 1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
 2) On the Create Flow page,
@@ -257,7 +257,7 @@ plt.ylabel("Count");
 ```
 Out [5]:
 
-![](https://github.com/mlhubca/demo/blob/master/tennis/images/play5.png)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/play5.png)
 
 
 In [6]
@@ -297,7 +297,7 @@ plt.show()
 
 Out [6]:
 
-![](https://github.com/mlhubca/demo/blob/master/tennis/images/play6.png)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/play6.png)
 
 
 3) Add a new cell after cell "In [11]" (see Exercise 1), and add the following code to the cells, and execute it
@@ -328,7 +328,7 @@ plt.show()
 ```
 Out [12]:
 
-![](https://github.com/mlhubca/demo/blob/master/tennis/images/play12.png)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/play12.png)
 
 
 ## Exercise 5: Automating algnorthm selection using CADS (IBM Cognitive Assistant for Data Scientists)
