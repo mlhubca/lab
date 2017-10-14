@@ -3,12 +3,12 @@
 
 This lab we will explore how a data scientist utilizes DSX and RStudio to easily analyze data using Association rules algorithms and to visualize the outcomes. Association rules algorithms support market basket analysis.
 
-[<img src="https://github.com/mlhubca/lab/blob/master/gosales/media/DSE2E2.png">](https://github.com/mlhubca/ml101/blob/master/lab2/)
+[<img src="https://github.com/mlhubca/lab/blob/master/gosales/images/DSE2E2.png">](https://github.com/mlhubca/ml101/blob/master/lab2/)
 
  
 ## Overview
 
-<img src="https://raw.githubusercontent.com/mlhubca/lab/master/gosales/lab2/media/Association-Rules-Lab-Flow.jpg">
+<img src="https://raw.githubusercontent.com/mlhubca/lab/master/gosales/lab2/images/Association-Rules-Lab-Flow.jpg">
 
 ### Outlines
 1) Start RStudio
@@ -34,7 +34,7 @@ Note that the Lab-DSX-ML.zip archive downloaded from Exercise 3 includes the fil
 ## Step 2. Importing Source Code and Data for Machine Learning Lab in RStudio
 
 1.  In “Files” tab use “New folder” to create 2 folders in the user’s home directory - data and demo (please do not mix it with the “File” menu item in the main menu and locate “Files” in the frame depicted here):
-> ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/RStudio-Files-tab.jpg)
+> ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/RStudio-Files-tab.jpg)
 
 2.  Using “Upload” button upload transactions.csv into the data folder and RStudio-apriori-demo-installation.R, RStudio-apriori-demo.R into the demo folder
 
@@ -42,26 +42,26 @@ Note that the Lab-DSX-ML.zip archive downloaded from Exercise 3 includes the fil
 ## Step 3. Installing Software Libraries and Packages
 
 1.  Double-click on the name of the file RStudio-apriori-demo-installation.R: RStudio will open the source code:
- > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/RStudio-Source-code.jpg)
+ > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/RStudio-Source-code.jpg)
 
 2.  Rename ~/.Rprofile to ~/old.Rprofile: check the file .Rprofile and click "Rename", change the name to old.Rprofile
- > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Renaming-rprofile.png)
+ > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Renaming-rprofile.png)
 
 3.  Quit the current session and start the new one:
 
     a. Select Session>Quit Session:
     
- > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Session-menu.png)
+ > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Session-menu.png)
  
     b. Select "Don't Save": 
     
- > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Quitting-R-session.png)
+ > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Quitting-R-session.png)
 
     c. After the old session has been finished, start a new session:
     
- > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Starting-a-new-R-session.png)
+ > ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Starting-a-new-R-session.png)
     
-4.  Run the code in RStudio-apriori-demo-installation.R using the Run button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/RStudio-running-source-code.png): please decline the options to update any packages while installing the new packages
+4.  Run the code in RStudio-apriori-demo-installation.R using the Run button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/RStudio-running-source-code.png): please decline the options to update any packages while installing the new packages
 
 5.  Check point: ensure that all packages install without errors
 
@@ -77,7 +77,7 @@ Note that the Lab-DSX-ML.zip archive downloaded from Exercise 3 includes the fil
 
 1.  Click on the name of the file RStudio-apriori-demo.R: RStudio will open the source code
 
-2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/RStudio-running-source-code.png) . The lab covers the following actions:
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/RStudio-running-source-code.png) . The lab covers the following actions:
 
     a.  Declaring the libraries used in the lab
 
