@@ -1,4 +1,3 @@
-# Machine Learning 101 
 
 # Exercise 1 - Root Cause Analysis
 
@@ -16,7 +15,7 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 ## Step 3. Add a notebook from URL
 
 - Notebook name: DSX_IA_Lab
-- Notebook URL: https://raw.githubusercontent.com/mlhubca/ml101/master/lab1/DSX_IA_Lab.ipynb
+- Notebook URL: https://raw.githubusercontent.com/mlhubca/lab/master/gosales/lab1/DSX_IA_Lab.ipynb
 - Default Spark instance "DSX-Spark"
 
 ## Step 4. Run the notebook
@@ -27,4 +26,4 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 
 --- 
 
-## [Next](https://github.com/mlhubca/ml101/blob/master/lab2)
+## [Next](https://github.com/mlhubca/lab/tree/master/gosales/lab2)
