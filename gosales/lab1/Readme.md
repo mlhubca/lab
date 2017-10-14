@@ -1,13 +1,13 @@
 
 # Exercise 1 - Root Cause Analysis
 
-[<img src="https://github.com/mlhubca/ml101/blob/master/media/DSE2E1.png">](https://github.com/mlhubca/ml101/blob/master/lab1/)
+[<img src="https://github.com/mlhubca/ml101/blob/master/images/DSE2E1.png">](https://github.com/mlhubca/ml101/blob/master/lab1/)
 
 This lab exercise uses a notebook in Data Science Experience to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
 # Overview
 
-[<img src="https://github.com/mlhubca/ml101/blob/master/ml101/lab1/media/overview.gif">](https://github.com/mlhubca/ml101/blob/master/lab1/media/overview.gif)
+[<img src="https://github.com/mlhubca/ml101/blob/master/ml101/lab1/images/overview.gif">](https://github.com/mlhubca/ml101/blob/master/lab1/images/overview.gif)
 
 
 ## Step 1. Login to DSX
