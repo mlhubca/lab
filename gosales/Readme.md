@@ -1,7 +1,4 @@
-# Machine Learning 101
-
-# Hands on Lab 
-[<img src="https://github.com/mlhubca/ml101/blob/master/media/DSE2E.png">](https://github.com/mlhubca/ml101/blob/master/)
+# Introduction
 
 As a Data Scientist, you have to turn raw data into meaning using state-of-the-art techniques leveraging open source and enterprise applications. Perform hands-on exercises leveraging Apache Spark, Jupyter, Python, and R to derive sales performance for a specific product line, then build an advanced Machine Learning model in R.
 
@@ -28,17 +25,13 @@ DSX brings together the data science development experience accumulated in R, Py
 
 ## Step 2. Perform Hands-on exercises
 
-### [Exercise 1. Root cause analysis using DSX and Python notebook](https://github.com/mlhubca/ml101/blob/master/lab1/)
+### [Exercise 1. Root cause analysis using DSX and Python notebook](https://github.com/mlhubca/lab/blob/master/goslaes/lab1/)
 This lab exercise uses a notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
-### [Exercise 2. Create resolution using DSX and R notebook with descision trees](https://github.com/mlhubca/ml101/blob/master/lab2/)
+### [Exercise 2. Create resolution using DSX and R notebook with descision trees](https://github.com/mlhubca/lab/blob/master/gosales/lab2/)
 This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. This lab uses descision tree classification. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices. 
 
-### [Exercise 3. Create resolution using DSX and RStudio with association rules](https://github.com/mlhubca/ml101/blob/master/lab3/)
+### [Exercise 3. Create resolution using DSX and RStudio with association rules](https://github.com/mlhubca/lab/blob/master/gosales/lab3/)
 This lab we will explore how a data scientist utilizes DSX and RStudio to easily analyze data using Association rules algorithms and to visualize the outcomes. Association rules algorithms support market basket analysis.
-
-### [Exercise 4. Collaboration]
-
-### [Exercise 5. Model Builder]
 
 
