@@ -1,6 +1,6 @@
 
 # Exercise 2 - Create resolution using DSX and R notebook with descision trees
-[<img src="https://github.com/mlhubca/lab/blob/master/gosales/media/DSE2E2.png">](https://github.com/mlhubca/lab/blob/master/gosales/lab2/)
+[<img src="https://github.com/mlhubca/lab/blob/master/gosales/images/DSE2E2.png">](https://github.com/mlhubca/lab/blob/master/gosales/lab2/)
 
 This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. This lab uses descision tree classification. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices.
  
@@ -20,7 +20,7 @@ This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud
 2.  **Exploring sales data using Decision Tree, DSX Notebooks, Brunel, R** (for this lab, the data from IBM sample DB “GOSALES” was used):
 
     
-    <img src="https://raw.githubusercontent.com/mlhubca/lab/master/gosales/lab2/media/Decision-Tree-Lab-Flow.jpg">
+    <img src="https://raw.githubusercontent.com/mlhubca/lab/master/gosales/lab2/images/Decision-Tree-Lab-Flow.jpg">
     
 3. **Outlines of the procedure**
 
@@ -94,18 +94,18 @@ Download Lab-DSX-ML.zip archive from the github.com location below and extract t
     a.  Place your cursor to the cell with the default getObjectStorageFileWithCredentials implementation
     b.  Create an empty code cell just above the code cell with the default getObjectStorageFileWithCredentials by clicking on the following menu items: “Insert” &gt; “Insert Cell Above” and place your cursor into the new cell
 
-    ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Replacing-the-object-storage-service-inserting-cell.jpg)
+    ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Replacing-the-object-storage-service-inserting-cell.jpg)
 
     c.  Clicking on “Insert to code” on Transactions.csv will show the options to insert the code: choose “insert R DataFrame” 
 
-    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
+    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Replacing-the-object-storage-service-the-code-inserted.jpg)
 
     e.  Replace the existing implementation of getObjectStorageFileWithCredentials (starts with “&lt;- function” and finishes with the end of block “}”) with the generated code in the new cell for getObjectStorageFileWithCredentials\_&lt;unique sequence&gt;; Here is the example of the highlighted code that needs to be replaced:
-     ![](https://github.com/mlhubca/ml101/blob/master/lab2/media/Replacing-the-object-storage-service-highlighted-code.jpg)
+     ![](https://github.com/mlhubca/ml101/blob/master/lab2/images/Replacing-the-object-storage-service-highlighted-code.jpg)
 
      Take the new code (highlighted with the green rectangle) and place instead of the old code (highlighted with the red rectangle):
 
-     ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Replacing-the-object-storage-service-code-replacement.jpg)
+     ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Replacing-the-object-storage-service-code-replacement.jpg)
 
     f.  Remove the cell with the newly generated code after replacing the default implementation of getObjectStorageFileWithCredentials
 
@@ -116,7 +116,7 @@ Download Lab-DSX-ML.zip archive from the github.com location below and extract t
 
 1.  Open “ml-lab-installation” notebook in the Edit mode
 
-2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Execute-section.png) or by using the menu Cell&gt; Run Cells
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Execute-section.png) or by using the menu Cell&gt; Run Cells
 
 3.  Ensure that there are no installation failures before proceeding to the lab
 
@@ -127,7 +127,7 @@ Download Lab-DSX-ML.zip archive from the github.com location below and extract t
 
 1.  Open “machine-learning-with-DSX-lab” notebook in the Edit Mode
 
-2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/media/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/mlhubca/lab/blob/master/gosales/lab2/images/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
 
     a.  Declaring the libraries used in the lab
 
