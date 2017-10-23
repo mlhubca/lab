@@ -32,3 +32,7 @@ natural_language_understanding = NaturalLanguageUnderstandingV1(
 - You can run the whole notebook in a single step by clicking on the menu Cell -> Run All.
 
 --- 
+
+### References:
+
+[NLU API doc](https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/?curl#get-analyze)
