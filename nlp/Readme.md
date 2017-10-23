@@ -4,8 +4,8 @@ This lab exercise uses IBM Watson Natural Language Understanding service to anal
 
 ### Preparation
 
-1) Create a NLU service instance in Bluemix [Log in and create the service](https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html#getting-started-tutorial)
-2) Obtain the NLU service credentials (username, password, version) from Bluemix dashboard
+1) Create a NLU service instance in Bluemix [Getting started tutorial](https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html#getting-started-tutorial)
+2) Obtain the NLU service credentials (username, password, version) from Bluemix services dashboard
 
 ### Step 1. Login to DSX (https://datascience.ibm.com/)
 ### Step 2. Select the Default Project or create a new project
