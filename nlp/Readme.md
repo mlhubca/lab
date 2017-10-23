@@ -12,7 +12,7 @@ This lab exercise uses IBM Watson Natural Language Understanding service to anal
 ### Step 3. Add a notebook to the project from URL
 
 - Notebook name: Waston-NLU-Demo
-- Notebook URL: https://raw.githubusercontent.com/mlhubca/nlp/master/Waston-NLU-Demo.ipynb
+- Notebook URL: https://raw.githubusercontent.com/mlhubca/lab/master/nlp/Waston-NLU-Demo.ipynb
 - Default Spark instance
 
 ### Step 4. Replace the username/password in the following cell with yours in your credentials
