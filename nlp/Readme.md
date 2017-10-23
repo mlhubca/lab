@@ -16,7 +16,7 @@ This lab exercise uses IBM Watson Natural Language Understanding service to anal
 - Default Spark instance
 
 ### Step 4. Replace the username/password in the following cell with yours in your credentials
-`
+```
 import json
 from watson_developer_cloud import NaturalLanguageUnderstandingV1
 import watson_developer_cloud.natural_language_understanding.features.v1 as Features
@@ -25,7 +25,7 @@ natural_language_understanding = NaturalLanguageUnderstandingV1(
   username="************************",
   password="************",
   version="2017-02-27")
-`
+```
 ### Step 5. Run the notebook
 
 - You can run the notebook document step-by-step (one cell a time) by pressing shift + enter.
