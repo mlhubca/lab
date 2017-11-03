@@ -1,5 +1,7 @@
 # Machine Learning Lab Exercises - Play Tennis
 
+![](https://github.com/mlhubca/cascon/blob/master/tennis/images/tennis.jpeg)
+
 ## Introduction
 
 In these lab exercises, you will learn how to create machine learning models in a notebook, via model builder wizard, and using Flow. You will also learn how to use open source technologies to visualize data and automatically select the best algorithm. All the tools and technologies used in the exercises are readily available on IBM Data Science Experience (DSX).
