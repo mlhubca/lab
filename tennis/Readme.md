@@ -1,6 +1,6 @@
 # Machine Learning Lab Exercises - Play Tennis
 
-![](https://github.com/mlhubca/cascon/blob/master/tennis/images/tennis.jpeg)
+![](https://github.com/mlhubca/lab/blob/master/tennis/images/tennis.jpeg)
 
 ## Introduction
 
