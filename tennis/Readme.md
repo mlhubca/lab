@@ -6,7 +6,7 @@
 
 In these lab exercises, you will learn how to create machine learning models in a notebook, via model builder wizard, and using Flow. You will also learn how to use open source technologies to visualize data and automatically select the best algorithm. All the tools and technologies used in the exercises are readily available on IBM Data Science Experience (DSX).
 
-IBM Data Science Experience (DSX) is a comprehensive Data Science development framework. You can find more details and sign up for 30 day trail at https://datascience.ibm.com/.
+IBM Data Science Experience (DSX) is a comprehensive Data Science development framework. You can find more details and sign up for 30 day trial at https://datascience.ibm.com/.
 
 ### Exercise Summary
 
@@ -46,34 +46,35 @@ You and a friend generally meet up in the morning at a local tennis court to pla
 
 - A dataset from which the model is to be built.
 - Each column is an attribute.
-- Each row is an example (instance)
-- The attribute Play is the variable to be learned. 
-- The possible labels of each example are yes and no.
-- Goal: building a model to predict unseen instances, e.g.: {rain, hot, normal, strong}
+- Each row is an example (instance).
+- The attribute `Play` is the variable to be learned. 
+- The possible labels of each example are `yes` and `no`.
+- Goal: build a model to predict unseen instances, e.g.: `{rain, hot, normal, strong}`
 
 
 ### Prerequisites
 
 - Sign up and login to DSX: https://datascience.ibm.com/
 - Create a new project "Play Tennis"
-- Download file "tennis.csv" to your local machine
+- Download file `tennis.csv` to your local machine
     - Go to <https://github.com/mlhubca/lab/blob/master/tennis/tennis.csv>
     - In the top right, righ click the Raw button
-    - Save as...
-- Upload file "tennis.csv" to project "Play Tennis"
+    - Save as ...
+- Upload file `tennis.csv` to project "Play Tennis"
 
 
 
 ## Exercise 1: Creating a model using a notebook
 
+
 1) Add a new notebook using language Python 2 with Spark 2.0
-2) Add code to access file "tennis.csc" from the notebook
+2) Add code to access file `tennis.csv` from the notebook
     - Open Find and Add Data pane from the Notebook Toolbar
-    - Find tennis.csv file, select "Insert SparkSession DataFrame" from "Insert to code" dropdown
+    - Find `tennis.csv` file, select "Insert SparkSession DataFrame" from "Insert to code" dropdown
     - The code will be inserted to the first cell of the notebook, as:
     
 In [1]
-```
+```python
 import ibmos2spark
 
 # @hidden_cell
@@ -99,10 +100,12 @@ df_data_1.take(5)
 ```
 3) Execute the cell 
 
-4) Add the following cells and execute them in order
+3) Execute the cell by pressing Ctrl + Enter or going to Notebook toolbar and selecting `Run -> Run Cells`.
+
+4) Add the following cells and execute them in order. Almost each cell is accompanied by a short description in comment format. At any time during the exercise, feel free to ask a workshop host further clarification or questions. 
 
 In [2]
-```
+```python
 from pyspark.ml.feature import OneHotEncoder, StringIndexer, IndexToString
 from pyspark.ml.linalg import Vectors
 from pyspark.ml.feature import VectorAssembler
@@ -112,61 +115,82 @@ from pyspark.ml.evaluation import BinaryClassificationEvaluator
 from pyspark.ml import Pipeline, Model
 ```
 In [3]
-```
+```python
 df_data_1.show()
 ```
 In [4]
-```
+```python
 df_data_1.printSchema()
 ```
 In [5]
-```
+```python
+# Randomly split the data into train and test datasets.
 splitted_data = df_data_1.randomSplit([0.85, 0.15], 48)
 train_data = splitted_data[0]
 test_data = splitted_data[1]
 ```
 In [6]
-```
-stringIndexer_label = StringIndexer(inputCol="Play", outputCol="label").fit(df)
+```python
+# Encode each string label column (i.e., Outlook, etc.) to an label index column.
+# For instance, the values of the Outlook label column (rain, sunny, overcast) will be mapped to the indices 0, 1 and 2 respectively.
+stringIndexer_label = StringIndexer(inputCol="Play", outputCol="label").fit(df_data_1)
 stringIndexer_outlook = StringIndexer(inputCol="Outlook", outputCol="outlook_code")
 stringIndexer_temp = StringIndexer(inputCol="Temperature", outputCol="temperature_code")
 stringIndexer_humi = StringIndexer(inputCol="Humidity", outputCol="humidity_code")
 stringIndexer_wind = StringIndexer(inputCol="Wind", outputCol="wind_code")
 ```
 In [7]
-```
+```python
+# Combine the list of input columns (Outlook, Temperature, etc.) into a single vector column.
+# In each row, the values of the input columns will be concatenated into a vector in the specified order.
 vectorAssembler_features = VectorAssembler(inputCols=["outlook_code", "temperature_code", "humidity_code", "wind_code"], outputCol="features")
+
+# Create a decision tree classifier. The constructor takes two input columns: the feature vector and the label to predict.
 dt = DecisionTreeClassifier(labelCol="label", featuresCol="features")
 ```
 In [8]
-```
+```python
+# The classifier will output a column called "prediction" with label indices for the predicted label.
+# We wish to map that column back to a column containing the original labels as strings. 
 labelConverter = IndexToString(inputCol="prediction", outputCol="predictedLabel", labels=stringIndexer_label.labels)
 ```
 In [9]
-```
+```python
+# Create a pipeline, a series of algorithms that transform a dataset.
 pipeline_dt = Pipeline(stages=[stringIndexer_label, stringIndexer_outlook, stringIndexer_temp, stringIndexer_humi, stringIndexer_wind, vectorAssembler_features, dt, labelConverter])
 ```
 In [10]
-```
+```python
+# Fit the pipeline to the training dataset.
 model_dt = pipeline_dt.fit(train_data)
 ```
 In [11]
-```
+```python
+# Make predictions on the testing dataset.
 predictions = model_dt.transform(test_data)
+```
+
+In [12]
+```python
+# Evaluate the performance of the decision tree classifier.
 evaluatorDT = BinaryClassificationEvaluator(labelCol="label", rawPredictionCol="rawPrediction", metricName="areaUnderROC")
 accuracy = evaluatorDT.evaluate(predictions)
 
 print("Accuracy = %g" % accuracy)
 ```
-In [12]
-```
+
+In [13]
+```python
+# Create an unseen instance of weather conditions.
 new_data = [{'Outlook': 'rain', 'Temperature': 'hot', 'Humidity': 'normal', 'Wind': 'strong'}]
 
 new_df = sqlContext.createDataFrame(new_data)
 new_df.show()
 ```
-In [13]
-```
+
+In [14]
+```python
+# Make a new prediction on the unseen instance.
 new_predictions = model_dt.transform(new_df)
 new_predictions.select("predictedLabel").show()
 ```
