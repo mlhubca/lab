@@ -15,6 +15,7 @@
   - On DSX, open your project
   - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
   - On the `New Notebook` page, select `From URL` tab
-  - In the `Name` field, input `Churn Prediction`
-  - In the `Notebook URL` field, copy this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/churn-prediction-with-scikit-learn-TensorFlow.ipynb`
+  - In the `Name` field, input `Churn Prediction` as the notebook name
+  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/churn-prediction-with-scikit-learn-TensorFlow.ipynb`
   - Click the `Create Notebook` button
+  
