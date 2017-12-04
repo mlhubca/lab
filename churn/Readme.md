@@ -1,4 +1,4 @@
-### Prerequisites
+### Prerequisites and steps
 
 1. Sign up to IBM Data Science Experience (DSX): https://datascience.ibm.com/
 2. Sign in to DSX
