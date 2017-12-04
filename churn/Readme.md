@@ -8,8 +8,8 @@
   - On the `New Project` page, input `Customer Churn` as the project name
   - In the `Target container` field, input `churn` as the container name
   - Click the `Create` button
-4. Download dataset `churn-all.csv`
-  - Link to dataset: https://github.com/mlhubca/lab/blob/master/churn/churn-all.csv
+4. Download dataset `churn-all.csv` from Github
+  - Use a new brower tab to access dataset: https://github.com/mlhubca/lab/blob/master/churn/churn-all.csv
   - Right-click the `Raw` button on the toolbar, and select `Save Link As...` or `Save Content As...` (depending on your browser)
 5. Upload dataset `churn-all.csv` to your project
   - On DSX, open your project
