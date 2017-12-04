@@ -2,7 +2,7 @@
 
 1. Sign up to IBM Data Science Experience (DSX): https://datascience.ibm.com/
 2. Sign in to DSX
-3. On DSX, create a new project, e.g. `Customer Churn`
+3. On DSX, create a new project
   - Click `Projects`, and select `View All Projects`
   - Click the `New` button to creata a new project
   - On the `New Project` page, input `Customer Churn` as the project name
