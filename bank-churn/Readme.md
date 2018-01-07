@@ -17,23 +17,23 @@ In this workshop, you will learn how to use IBM's industry leading Data Science 
 Dataset `bank-churn.csv`
 
 
- |-- CUST_ID: integer (nullable = true)
- |-- SEX: string (nullable = true)
- |-- AGE: integer (nullable = true)
- |-- EDUCATION: integer (nullable = true)
- |-- INVESTMENT: integer (nullable = true)
- |-- INCOME: integer (nullable = true)
- |-- ACTIVITY: integer (nullable = true)
- |-- CHURN: integer (nullable = true)
- |-- YRLY_AMT: double (nullable = true)
- |-- AVG_DAILY_TX: double (nullable = true)
- |-- YRLY_TX: integer (nullable = true)
- |-- AVG_TX_AMT: double (nullable = true)
- |-- NEGTWEETS: integer (nullable = true)
- |-- STATE: string (nullable = true)
- |-- EDUCATION_GROUP: string (nullable = true)
- |-- TwitterID: double (nullable = true)
- |-- CHURN_LABEL: string (nullable = true)
+ | CUST_ID | integer |
+ | SEX |  string |
+ | AGE |  integer|
+ | EDUCATION |  integer |
+ | INVESTMENT |  integer |
+ | INCOME |  integer |
+ | ACTIVITY |  integer |
+ | CHURN |  integer |
+ | YRLY_AMT |  double |
+ | AVG_DAILY_TX |  double |
+ | YRLY_TX |  integer |
+ | AVG_TX_AMT |  double |
+ | NEGTWEETS |  integer |
+ | STATE |  string |
+ | EDUCATION_GROUP |  string |
+ | TwitterID |  double |
+ | CHURN_LABEL |  string |
 
 
 ### Exercise Summary
