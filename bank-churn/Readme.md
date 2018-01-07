@@ -29,7 +29,7 @@ It's suggested that you go through these exercises in order.
 3. On DSX, create a new project
   - Click `Projects`, and select `View All Projects`
   - Click the `New` button to creata a new project
-  - On the `New Project` page, input `Customer Churn` as the project name
+  - On the `New Project` page, input `Bank Churn` as the project name
   - In the `Target container` field, input `churn` as the container name
   - Click the `Create` button
 4. Download dataset `bank-churn.csv` from Github
@@ -39,7 +39,7 @@ It's suggested that you go through these exercises in order.
   - On DSX, open your project
   - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
   - On your right-hand panel, select the `Load` tab
-  - Drop file `churn-all.csv` to the box or browse file `bank-churn.csv` to add the file to the project
+  - Drop file `bank-churn.csv` to the box or browse file `bank-churn.csv` to add the file to the project
 
 
 ## Exercise 1: Creating a model using a notebook
@@ -52,7 +52,7 @@ It's suggested that you go through these exercises in order.
   - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
   - Click the `Create Notebook` button
   
-2. Execute the cell one by one by pressing Ctrl + Enter or going to Notebook toolbar and selecting `Run -> Run Cells`.
+2. Execute the cell one by one by pressing Ctrl + Enter or selecting `Run -> Run Cells` from the notebook toolbar.
 
 This notebook goes throught the below common machine learning workflow:
 
@@ -63,7 +63,7 @@ This notebook goes throught the below common machine learning workflow:
 5) Model evaulation
 6) Model application
 
-## Exercise 2: Creating a flow using Canvas
+## Exercise 2: Creating a model using machine learning flow
 
 ![](https://github.com/mlhubca/lab/blob/master/tennis/images/PlayTennisFlow.png)
 
