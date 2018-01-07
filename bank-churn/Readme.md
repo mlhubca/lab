@@ -15,25 +15,25 @@ In a nutshell, the use of Big Data and sophisticated machine learning models giv
 In this workshop, you will learn how to use IBM's industry leading Data Science Experience to create churn prediction models using notebooks and visual Model Builder, and deploy the models to a live system, and monitor and evaluate the model performance over time. 
 
 Dataset `bank-churn.csv`
-
-
- | CUST_ID | integer |
- | SEX |  string |
- | AGE |  integer|
- | EDUCATION |  integer |
- | INVESTMENT |  integer |
- | INCOME |  integer |
- | ACTIVITY |  integer |
- | CHURN |  integer |
- | YRLY_AMT |  double |
- | AVG_DAILY_TX |  double |
- | YRLY_TX |  integer |
- | AVG_TX_AMT |  double |
- | NEGTWEETS |  integer |
- | STATE |  string |
- | EDUCATION_GROUP |  string |
- | TwitterID |  double |
- | CHURN_LABEL |  string |
+| Name | Data Type|
+|------|----------|
+| CUST_ID | integer |
+| SEX |  string |
+| AGE |  integer|
+| EDUCATION |  integer |
+| INVESTMENT |  integer |
+| INCOME |  integer |
+| ACTIVITY |  integer |
+| CHURN |  integer |
+| YRLY_AMT |  double |
+| AVG_DAILY_TX |  double |
+| YRLY_TX |  integer |
+| AVG_TX_AMT |  double |
+| NEGTWEETS |  integer |
+| STATE |  string |
+| EDUCATION_GROUP |  string |
+| TwitterID |  double |
+| CHURN_LABEL |  string |
 
 
 ### Exercise Summary
