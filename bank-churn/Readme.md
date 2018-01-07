@@ -2,8 +2,6 @@
  
  ## Introduction
  
-Global Consumer Banking survey from Ernst & Young reported that in 2012, 50% of customers, globally, either changed their banks or were planning to change. In US and Canada, customers who changed their banks increased from 38% in 2011 to 45% in 2012.
- 
 Customer churn and engagement has become one of the top issues for most banks. It costs significantly more to acquire new customers than retain existing ones, and it costs far more to reacquire deflected customers. In fact, several studies have proven that churn remains one of the biggest destructors of enterprise values.
  
 In order to identify early signs of potential churn and take actions to avoid losing customers, organizations start getting a holistic view of the customers including their interactions across multiple channels such as bank visits, calls to customer service departments, web-based transactions, mobile banking and social media interactions. 
@@ -82,12 +80,12 @@ It's suggested that you go through these exercises in order.
 
 This notebook guides you throught the common machine learning workflow:
 
-1) Data acquisition
-2) Data exploration & visualization
-3) Data preparation
-4) Model training
-5) Model evaulation
-6) Model application
+- Data acquisition
+- Data exploration & visualization
+- Data preparation
+- Model training
+- Model evaulation
+- Model application
 
 ## Exercise 2: Creating a model using machine learning flow
 
