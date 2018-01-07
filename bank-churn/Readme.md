@@ -14,28 +14,31 @@ In a nutshell, the use of Big Data and sophisticated machine learning models giv
  
 In this workshop, you will learn how to use IBM's industry leading Data Science Experience to create churn prediction models using notebooks and visual Model Builder, and deploy the models to a live system, and monitor and evaluate the model performance over time. 
 
-Dataset `bank-churn.csv`
+### Data 
 
-| Name | Data Type|
-|------|----------|
-| CUST_ID | integer |
-| SEX |  string |
-| AGE |  integer|
-| EDUCATION |  integer |
-| INVESTMENT |  integer |
-| INCOME |  integer |
-| ACTIVITY |  integer |
-| CHURN |  integer |
-| YRLY_AMT |  double |
-| AVG_DAILY_TX |  double |
-| YRLY_TX |  integer |
-| AVG_TX_AMT |  double |
-| NEGTWEETS |  integer |
-| STATE |  string |
-| EDUCATION_GROUP |  string |
-| TwitterID |  double |
-| CHURN_LABEL |  string |
+Data set `bank-churn.csv` has the following schema:
 
+|No.| Name | Data Type|
+|---|------|----------|
+|1| CUST_ID | integer |
+|2| SEX |  string |
+|3| AGE |  integer|
+|4| EDUCATION |  integer |
+|5| INVESTMENT |  integer |
+|6| INCOME |  integer |
+|7| ACTIVITY |  integer |
+|8| CHURN |  integer |
+|9| YRLY_AMT |  double |
+|10| AVG_DAILY_TX |  double |
+|11| YRLY_TX |  integer |
+|12| AVG_TX_AMT |  double |
+|13| NEGTWEETS |  integer |
+|14| STATE |  string |
+|15| EDUCATION_GROUP |  string |
+|16| TwitterID |  double |
+|17| CHURN_LABEL |  string |
+
+The data set has 6001 rows of data. CHURN is the label (target variable).
 
 ### Exercise Summary
 
@@ -77,7 +80,7 @@ It's suggested that you go through these exercises in order.
   
 2. Execute the cell one by one by pressing Ctrl + Enter or selecting `Run -> Run Cells` from the notebook toolbar.
 
-This notebook goes throught the below common machine learning workflow:
+This notebook guides you throught the common machine learning workflow:
 
 1) Data acquisition
 2) Data exploration & visualization
