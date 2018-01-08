@@ -228,14 +228,14 @@ Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Da
 1) Add a new model using `New model` button or from the `Add to project` dropdown, select `Model`
 2) On the `New model` page
     - Specify a model name, e.g. Bank Churn Model
-    - **Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server**
+    - *Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server*
      - Select a Spark Service or use the default service
      - Use the default `Manual` method
      - Click `Create` button
 3) In the `Select Data` stage, select data asset `bank-churn.csv`
 4) In the `Train` stage, 
      - Select `CHURN (Integer)` as the Label col
-     - Select the following columns as the Feature columns (excluding CUST_ID, TwritterID, EDUCATION_GROUP and CHURN_LABEL columns) :
+     - Select the following columns as the Feature columns (excluding CUST_ID, TwitterID, EDUCATION_GROUP and CHURN_LABEL columns) :
      SEX (String), 
      AGE (Integer), 
      EDUCATION (Integer), 
