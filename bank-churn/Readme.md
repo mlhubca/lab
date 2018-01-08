@@ -38,7 +38,8 @@ Data set `bank-churn.csv` has the following schema:
 |16| TwitterID |  double |
 |17| CHURN_LABEL |  string |
 
-The data set has 6001 rows of data. CHURN is the label (target variable).
+The data set has 6001 rows of data. 'CHURN' is the label column, i.e. target variable.
+
 
 ### Exercise Summary
 
@@ -67,7 +68,7 @@ This tutorial takes you step-by-step through the process of creating machine lea
   - On DSX, open your project
   - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
   - On your right-hand panel, select the `Load` tab
-  - Drop file `bank-churn.csv` to the box or browse file `bank-churn.csv` to add the file to the project
+  - Drop file `bank-churn.csv` to the box or browse file `bank-churn.csv` and add the file to the project
 
 
 ## Exercise 1: Creating a model using a notebook
@@ -75,6 +76,10 @@ This tutorial takes you step-by-step through the process of creating machine lea
 *Notebook is an interactive web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.* 
 
 ![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/notebook.png)
+
+**Technology**
+
+Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
 
 This notebook guides you through the common machine learning workflow:
 
@@ -84,10 +89,6 @@ This notebook guides you through the common machine learning workflow:
 - Model training
 - Model evaluation
 - Model application
-
-**Technology**
-
-Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
 
 **Steps**
 
@@ -100,7 +101,8 @@ Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplo
   - Click the `Create Notebook` button
   
 2. Execute code in the notebook cells
- - Place cursor in cell and press `Ctrl + Enter` or selecting menu `Run -> Run Cells` from the notebook toolbar.
+ - Place cursor in cell and press `Ctrl + Enter`
+ Or selecting menu `Run -> Run Cells` from the notebook toolbar.
 
 
 ## Exercise 2: Creating a model using machine learning flow
@@ -111,42 +113,63 @@ Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplo
 
 **Technology**
 
-SPSS Modelor, feature selection, auto classifier, data audit, field operations, data visualization 
+SPSS Modeler, feature selection, auto classifier, data audit, field operations, data visualization 
 
 **Steps**
 
-1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
+1) Add a new flow using `New flow` button or from the "Add to project" dropdown, select "SPSS Modeler flow"
 2) On the Create Flow page,
-    - Specify a name, e.g. "Play Tennis Flow"
-    - Select "IBM SPSS Modeler" Runtime
+    - Specify a name, e.g. "Bank Churn Flow"
+    - Select "**IBM SPSS Modeler**" Runtime
     - Click "Create Flow"
-3) Drag and drop node "tennis.csv" from the Files list to the flow
-4) Click the big plus "+" icon to show node palette
-5) Select node "Type" from "Field Operations", drag and drop the node to the flow
-6) Connect node "tennis.csc" to node "Type"
-7) Right click node "Type", select "Open",
-    - Add all fields to the Types list
-    - Select field Play, modify the Role as Target
-8) Select node "Partition" from "Field Oparations", drag and drop the node to the flow
-9) Connect node "Type" to node "Partition"
-10) Right click node "Partition", select "Open" 
-    - Specify 85 for the Training partition size (%)
-    - Specify 15 for the Testing partition size (%)
-11) Select node "C5.0" from Modeling, drag and drop the node to the flow
-12) Right click node "C5.0", select "Open",
-    - Select Play for the Target
-    - Select the rest of the fields for Input
-13) Right click node "C5.0", select "Run"
-14) Select node "Analysis" from "Outputs", drag and drop the node to the flow
-15) Connect the generated node "Play" to node "Analysis"
-16) Right click node "Analysis", select "Run".
-17) Open "Analysis of [Play]" to view the results
-18) Back to "Play Tennis Flow", right click the generated node "Play", select View Model
-19) View the model details
-    - Model Information
-    - Predictor Importance
-    - Top Decision Rules
-    - Tree Diagram
+
+*Load data*
+3) Drag and drop node `bank-churn.csv` from the Files list to the flow
+4) Click Palette icon (first icon on the toolbar) to show node palette
+
+*Data audit*
+5) Add `Data Audit` node from the `Outputs` list on the platte
+6) Connect file `bank-churn.csv` node to `Data Audit` node
+7) Run `Data Audit` node to generate output
+
+*Filter data*
+8) Add `Filter` node from the `Field Operations` list on the platte
+9) Connect file `bank-churn.csv` node to `Filter` node
+10) Open `Filter` node, select columns `CUST_ID`, `TwitterID` and `CHURN_LABLE` (to be filtered)
+
+*Set metadata*
+11) Add node `Type` node from the `Field Operations` list on the platte
+12) Connect file `Filter` node to `Type` node
+13) Open `Type` node, add all columns to the Types list
+14) Locate `CHURN` field, and
+     - Change Meansure from `Range` to `Flag`
+     - Change Role from `Input` to `Target`
+
+*Feature selection*
+15) Add `Feature Selection` node from the `Modeling` list on the platte
+16) Connect `Feature Selection` node to node "Type" (note that the Feature Selection node name is being changed to CHURN)
+17) Run node `CHURN` (Feature Selection). When the execution completes, a new model node `CHURN` is created 
+18) Add `Data Audit` node from the `Outputs` list on the platte
+19) Connect the new model nodel `CHURN` to `Data Audit` node
+20) Run `Data Audit` node to generate output
+
+*Data partition*
+21) Add `Partition` node from the `Field Operations` list on the platte
+22) Connect the new model nodel `CHURN` to `Partition` node
+23) Open `Partition` node, change the Training and Test partition to the ratio of 80/20.
+
+*Model building - Auto classifier*
+24) Add `Auto Classifier` node from the `Modeling` list on the platte
+25) Connect `Auto Classifier` to node `Partition`(note that the Auto Classifier node name is being changed to CHURN automatically)
+26) Run node `CHURN` (Auto Classifier). When the execution completes, a new model node `CHURN` is created automatically. 
+
+*Model analysis*
+27) Add `Analysis` node from the `Outputs` list on the platte
+28) Connect the new model nodel `CHURN` to `Analysis` node
+29) Run `Analysis` node to generate output
+
+*Run the stream/flow*
+30) Run the whole flow by clicking the `Run' button on the toolbar
 
 ## Exercise 3: Creating a model using model builder
 
