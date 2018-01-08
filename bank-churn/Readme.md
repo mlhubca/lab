@@ -1,5 +1,7 @@
 # Predicting Banking Customer Churn by Unlocking Big Data
  
+ ![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/churn.jpeg)
+
  ## Introduction
  
 Customer churn and engagement has become one of the top issues for most banks. It costs significantly more to acquire new customers than retain existing ones, and it costs far more to reacquire deflected customers. In fact, several studies have proven that churn remains one of the biggest destructors of enterprise values.
