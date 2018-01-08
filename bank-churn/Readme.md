@@ -41,11 +41,11 @@ Data set `bank-churn.csv` has the following schema:
 The data set has 6001 rows of data. 
 
 What are we trying to predict?
- - Whether a customer has a high probability of leaving the bank or not
+ - Whether a customer has a high probability of churn or not
  - CHURN is the Label: 1 (True) or 0 (False)
 
 What are the properties that we can use to make predictions?
- - Customer demographics, negative tweets, etc.
+ - Customer demographics, activities, social data, etc.
  - To build a classifier model, you extract the features of interest that most contribute to the classification.
 
 ### Exercise Summary
