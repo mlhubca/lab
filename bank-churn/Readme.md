@@ -46,7 +46,6 @@ The data set has 6001 rows of data. 'CHURN' is the label column, i.e. target var
 This tutorial takes you step-by-step through the process of creating machine learning models using notebooks, machine learning flow and the model builder.
 
 - [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-
   This notebook guides you through the common machine learning workflow:
    - Data acquisition
    - Data exploration & visualization
@@ -54,23 +53,17 @@ This tutorial takes you step-by-step through the process of creating machine lea
    - Model training
    - Model evaluation
    - Model application
-
   **Technology:** Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
 
 - [Exercise 2: Creating a model using machine learning flow](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-2-creating-a-model-using-machine-learning-flow)
-
    *Machine learning flow is a graphical representation of data, by using the Flow Editor to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file in object storage.*
-
    **Technology:** SPSS Modeler, feature selection, auto classifier, data audit, field operations, data visualization 
 
 - [Exercise 3: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-3-creating-a-model-using-model-builder)
-
    *The model builder uses the power of Watson Machine Learning to automatically prepare data and build models.*
-
    **Technology:** Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
 
 - [Exercise 4 (Optional): Creating a model using model builder in manual mode](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-4-optional-creating-a-model-using-model-builder-in-manual-mode)
-
    *The model builder in manual model allows you to select and evaluate multiple machine learning models*
 
 
@@ -143,43 +136,43 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 4) Click Palette icon (first icon on the toolbar) to show node palette
 
 #### Auditing data
-5) Add `Data Audit` node from the `Outputs` list on the platte
+5) Add `Data Audit` node from the `Outputs` list on the palette
 6) Connect file `bank-churn.csv` node to `Data Audit` node
 7) Run `Data Audit` node to generate output
 
 #### Filtering data
-8) Add `Filter` node from the `Field Operations` list on the platte
+8) Add `Filter` node from the `Field Operations` list on the palette
 9) Connect file `bank-churn.csv` node to `Filter` node
 10) Open `Filter` node, select columns `CUST_ID`, `TwitterID` and `CHURN_LABLE` (to be filtered)
 
 #### Setting metadata
-11) Add node `Type` node from the `Field Operations` list on the platte
+11) Add node `Type` node from the `Field Operations` list on the palette
 12) Connect file `Filter` node to `Type` node
 13) Open `Type` node, add all columns to the Types list
 14) Locate `CHURN` field, and
-     - Change Meansure from `Range` to `Flag`
+     - Change Measure from `Range` to `Flag`
      - Change Role from `Input` to `Target`
 
 #### Feature selection
-15) Add `Feature Selection` node from the `Modeling` list on the platte
+15) Add `Feature Selection` node from the `Modeling` list on the palette
 16) Connect `Feature Selection` node to node "Type" (note that the Feature Selection node name is being changed to CHURN)
 17) Run node `CHURN` (Feature Selection). When the execution completes, a new model node `CHURN` is created 
-18) Add `Data Audit` node from the `Outputs` list on the platte
-19) Connect the new model nodel `CHURN` to `Data Audit` node
+18) Add `Data Audit` node from the `Outputs` list on the palette
+19) Connect the new model node `CHURN` to `Data Audit` node
 20) Run `Data Audit` node to generate output
 
 #### Data partition
-21) Add `Partition` node from the `Field Operations` list on the platte
-22) Connect the new model nodel `CHURN` to `Partition` node
+21) Add `Partition` node from the `Field Operations` list on the palette
+22) Connect the new model node `CHURN` to `Partition` node
 23) Open `Partition` node, change the Training and Test partition to the ratio of 80/20.
 
 #### Model building - Auto classifier
-24) Add `Auto Classifier` node from the `Modeling` list on the platte
+24) Add `Auto Classifier` node from the `Modeling` list on the palette
 25) Connect `Auto Classifier` to node `Partition`(note that the Auto Classifier node name is being changed to CHURN automatically)
 26) Run node `CHURN` (Auto Classifier). When the execution completes, a new model node `CHURN` is created automatically. 
 
 #### Model analysis
-27) Add `Analysis` node from the `Outputs` list on the platte
+27) Add `Analysis` node from the `Outputs` list on the palette
 28) Connect the new model nodel `CHURN` to `Analysis` node
 29) Run `Analysis` node to generate output
 
@@ -208,9 +201,9 @@ Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Da
 3) In the `Select Data` stage, select data asset `bank-churn.csv`
 4) In the `Train` stage, 
      - Select `CHURN (Integer)` as the Label col
-     - Select `All (defaul)` as the Feature columns
+     - Select `All (default)` as the Feature columns
      - Select technique `Binary Classification`
-     - Use default Validation split (Train: 60, Test: 20, Holdout:20)
+     - Use the default Validation split (Train: 60, Test: 20, Holdout:20)
 5) In the `Evaluate` stage, save the model
 6) Review the model details
 7) On the Deployments tab, add an Online deployment, specify a name as `Bank Churn Online`
@@ -250,7 +243,7 @@ Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Da
      
      - Use suggested technique `Binary Classification`
      - Use default Validation split (Train: 60, Test: 20, Holdout:20)
-     - Click `Add Estimators` to add following estimators (machine learning algorthms)
+     - Click `Add Estimators` to add following estimators (machine learning algorithms)
         - Logistic Regression
         - Decision Tree Classifier
         - Random Forest Classifier
