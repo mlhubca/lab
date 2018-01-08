@@ -56,19 +56,19 @@ This tutorial takes you step-by-step through the process of creating machine lea
 1. Sign up to IBM Data Science Experience (DSX): https://datascience.ibm.com/
 2. Sign in to DSX
 3. On DSX, create a new project
-  - Click `Projects`, and select `View All Projects`
-  - Click the `New` button to create a new project
-  - On the `New Project` page, input `Bank Churn` as the project name
-  - In the `Target container` field, input `churn` as the container name
-  - Click the `Create` button
+    - Click `Projects`, and select `View All Projects`
+    - Click the `New` button to create a new project
+    - On the `New Project` page, input `Bank Churn` as the project name
+    - In the `Target container` field, input `churn` as the container name
+    - Click the `Create` button
 4. Download dataset `bank-churn.csv` from Github
-  - Use a new browser tab to access dataset: https://github.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv
-  - Right-click the `Raw` button on the toolbar, and select `Save Link As...` or `Save Content As...` (depending on your browser)
+    - Use a new browser tab to access dataset: https://github.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv
+    - Right-click the `Raw` button on the toolbar, and select `Save Link As...` or `Save Content As...` (depending on your browser)
 5. Upload dataset `bank-churn.csv` to your project
-  - On DSX, open your project
-  - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
-  - On your right-hand panel, select the `Load` tab
-  - Drop file `bank-churn.csv` to the box or browse file `bank-churn.csv` and add the file to the project
+    - On DSX, open your project
+    - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
+    - On your right-hand panel, select the `Load` tab
+    - Drop file `bank-churn.csv` to the box or browse file `bank-churn.csv` and add the file to the project
 
 
 ## Exercise 1: Creating a model using a notebook
@@ -83,12 +83,12 @@ Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplo
 
 This notebook guides you through the common machine learning workflow:
 
-- Data acquisition
-- Data exploration & visualization
-- Data preparation
-- Model training
-- Model evaluation
-- Model application
+ - Data acquisition
+ - Data exploration & visualization
+ - Data preparation
+ - Model training
+ - Model evaluation
+ - Model application
 
 **Steps**
 
@@ -123,11 +123,11 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
     - Select "**IBM SPSS Modeler**" Runtime
     - Click "Create Flow"
 
-*Load data*
+  *Load data*
 3) Drag and drop node `bank-churn.csv` from the Files list to the flow
 4) Click Palette icon (first icon on the toolbar) to show node palette
 
-*Data audit*
+  *Data audit*
 5) Add `Data Audit` node from the `Outputs` list on the platte
 6) Connect file `bank-churn.csv` node to `Data Audit` node
 7) Run `Data Audit` node to generate output
