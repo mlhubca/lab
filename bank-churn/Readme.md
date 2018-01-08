@@ -68,18 +68,7 @@ It's suggested that you go through these exercises in order.
 
 ## Exercise 1: Creating a model using a notebook
 
-* Technologies *
-Python, Spark 2.1, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
-
-1. Import a new notebook from a URL to the project
-  - On DSX, open your project
-  - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
-  - On the `New Notebook` page, select `From URL` tab
-  - In the `Name` field, input `Churn Prediction` as the notebook name
-  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
-  - Click the `Create Notebook` button
-  
-2. Execute the cell one by one by pressing Ctrl + Enter or selecting `Run -> Run Cells` from the notebook toolbar.
+*Notebook is an interactive web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.* 
 
 This notebook guides you throught the common machine learning workflow:
 
@@ -90,9 +79,34 @@ This notebook guides you throught the common machine learning workflow:
 - Model evaulation
 - Model application
 
+**Technology**
+
+Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
+
+**Steps**
+
+1. Import a new notebook from a URL to the project
+  - On DSX, open your project
+  - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
+  - On the `New Notebook` page, select `From URL` tab
+  - In the `Name` field, input `Churn Prediction` as the notebook name
+  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
+  - Click the `Create Notebook` button
+  
+2. Execute the cell one by one by pressing Ctrl + Enter or selecting menu `Run -> Run Cells` from the notebook toolbar.
+
+
 ## Exercise 2: Creating a model using machine learning flow
 
+*Machine learning flow is a graphical representation of data, by using the Flow Editor to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file in object storage.*
+
 ![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-flow.png)
+
+**Technology**
+
+SPSS Modelor, Feature Selection, Auto Classifier, Field Operations, Grapic
+
+**Steps**
 
 1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
 2) On the Create Flow page,
