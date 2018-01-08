@@ -135,7 +135,7 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 1) Add a new flow using `New flow` button or from the "Add to project" dropdown, select "SPSS Modeler flow"
 2) On the Create Flow page,
     - Specify a name, e.g. `Bank Churn Flow`
-    - Select `**IBM SPSS Modeler**` Runtime
+    - **Select `IBM SPSS Modeler` Runtime**
     - Click "Create Flow"
 
 #### Loading data
@@ -184,7 +184,7 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 29) Run `Analysis` node to generate output
 
 #### Executing the flow
-30) Run the whole flow by clicking the `Run' button on the toolbar
+30) Run the whole flow by clicking the `Run` button on the toolbar
 
 ## Exercise 3: Creating a model using model builder
 
@@ -201,7 +201,8 @@ Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Da
 1) Add a new model using `New model` button or from the `Add to project` dropdown, select `Model`
 2) On the `New model` page
     - Specify a model name, e.g. Bank Churn Model
-    - **Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server**
+    - Select a Machine Learning Service. 
+       *If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server*
      - Select a Spark Service or use the default service
      - Use the default `Automatic` method
      - Click `Create` button
