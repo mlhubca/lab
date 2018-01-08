@@ -93,16 +93,15 @@ This notebook guides you through the common machine learning workflow:
 **Steps**
 
 1. Import a new notebook from a URL to the project
-  - On DSX, open your project
-  - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
-  - On the `New Notebook` page, select `From URL` tab
-  - In the `Name` field, input `Churn Prediction` as the notebook name
-  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/bank-churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
-  - Click the `Create Notebook` button
+    - On DSX, open your project
+    - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
+    - On the `New Notebook` page, select `From URL` tab
+    - In the `Name` field, input `Churn Prediction` as the notebook name
+    - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/bank-churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
+    - Click the `Create Notebook` button
   
 2. Execute code in the notebook cells
- - Place cursor in cell and press `Ctrl + Enter`
- Or selecting menu `Run -> Run Cells` from the notebook toolbar.
+   - Place cursor in cell and press `Ctrl + Enter`, or selecting menu `Run -> Run Cells` from the notebook toolbar.
 
 
 ## Exercise 2: Creating a model using machine learning flow
@@ -180,30 +179,45 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 
 Watson Machine Learning, auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
 
-![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-auto-model.png)
 
 **Steps**
 
-1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
-2) On the "New model" page
-    - Specify the model name, e.g. Play Tennis
-    - Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service
+1) Add a new model using `New model` button or from the `Add to project` dropdown, select `Model`
+2) On the `New model` page
+    - Specify a model name, e.g. Bank Churn Model
+    - **Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server**
      - Select a Spark Service or use the default service
-     - Use the default "Automatic" method
-     - Click "Create" button
-3) In the Select Data stage, select data asset "tennis.csv"
-4) In the Train stage, 
-     - Select "Play (String)" as the label col
-     - Use default "All (default) as the feature columns
-     - Use suggested "Binary Classification"
-     - Use default validation split
-5) In the Evaluate stage, save the model
+     - Use the default `Automatic` method
+     - Click `Create` button
+3) In the `Select Data` stage, select data asset `bank-churn.csv`
+4) In the `Train` stage, 
+     - Select `CHURN (Integer)` as the Label col
+     - Select the following columns as the Feature columns (excluding CUST_ID, TwritterID, EDUCATION_GROUP and CHURN_LABEL columns) :
+     SEX (String), 
+     AGE (Integer), 
+     EDUCATION (Integer), 
+     INVESTMENT (Integer), 
+     INCOME (Integer), 
+     ACTIVITY (Integer), 
+     YRLY_AMT (Decimal), 
+     AVG_DAILY_TX (Decimal), 
+     YRLY_TX (Integer), 
+     AVG_TX_AMT (Decimal), 
+     NEGTWEETS (Integer), 
+     STATE (String)
+     
+     - Use suggested technique `Binary Classification`
+     - Use default Validation split (Train: 60, Test: 20, Holdout:20)
+5) In the `Evaluate` stage, save the model
 6) Review the model details
-7) On the Deployments tab, add an Online deployment, specify a name as "Play Tennis Online"
+7) On the Deployments tab, add an Online deployment, specify a name as `Bank Churn Online`
 8) View the details of the online deployment
-9) On "Test API" tab, specify the input data, and predict the value of Play
-     - Outlook: rain
-     - Temperature: hot
-     - Humidity: normal
-     - Wind: strong
+
+## Exercise 4 (Optional): Creating a model using model builder in manual mode
+
+*The model builder in manual model allows you to select and evaluate multiple machine learning models*
+
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
+
 
