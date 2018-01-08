@@ -123,11 +123,11 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
     - Select "**IBM SPSS Modeler**" Runtime
     - Click "Create Flow"
 
-  *Load data*
+### Load data
 3) Drag and drop node `bank-churn.csv` from the Files list to the flow
 4) Click Palette icon (first icon on the toolbar) to show node palette
 
-  *Data audit*
+### Data audit
 5) Add `Data Audit` node from the `Outputs` list on the platte
 6) Connect file `bank-churn.csv` node to `Data Audit` node
 7) Run `Data Audit` node to generate output
