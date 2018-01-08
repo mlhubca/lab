@@ -142,7 +142,7 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 3) Drag and drop node `bank-churn.csv` from the Files list to the flow
 4) Click Palette icon (first icon on the toolbar) to show node palette
 
-#### Auditing data
+#### Checking data quality
 5) Add `Data Audit` node from the `Outputs` list on the palette
 6) Connect file `bank-churn.csv` node to `Data Audit` node
 7) Run `Data Audit` node to generate output
@@ -160,7 +160,7 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
      - Change Measure from `Range` to `Flag`
      - Change Role from `Input` to `Target`
 
-#### Feature selection
+#### Selecting features
 15) Add `Feature Selection` node from the `Modeling` list on the palette
 16) Connect `Feature Selection` node to node "Type" (note that the Feature Selection node name is being changed to CHURN)
 17) Run node `CHURN` (Feature Selection). When the execution completes, a new model node `CHURN` is created 
@@ -168,17 +168,17 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 19) Connect the new model node `CHURN` to `Data Audit` node
 20) Run `Data Audit` node to generate output
 
-#### Data partition
+#### Splitting data
 21) Add `Partition` node from the `Field Operations` list on the palette
 22) Connect the new model node `CHURN` to `Partition` node
 23) Open `Partition` node, change the Training and Test partition to the ratio of 80/20.
 
-#### Model building - Auto classifier
+#### Building model - Auto classifier
 24) Add `Auto Classifier` node from the `Modeling` list on the palette
 25) Connect `Auto Classifier` to node `Partition`(note that the Auto Classifier node name is being changed to CHURN automatically)
 26) Run node `CHURN` (Auto Classifier). When the execution completes, a new model node `CHURN` is created automatically. 
 
-#### Model analysis
+#### Aanlyzing model performance
 27) Add `Analysis` node from the `Outputs` list on the palette
 28) Connect the new model nodel `CHURN` to `Analysis` node
 29) Run `Analysis` node to generate output
