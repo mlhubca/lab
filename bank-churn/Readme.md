@@ -40,11 +40,13 @@ The data set has 6001 rows of data. CHURN is the label (target variable).
 
 ### Exercise Summary
 
+This tutorial takes you step-by-step through the process of creating machine learning models using notebooks, machine learning flow and the model builder.
+
 - [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-1-creating-a-model-using-a-notebook)
 - [Exercise 2: Creating a model using machine learning flow](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-2-creating-a-model-using-machine-learning-flow)
 - [Exercise 3: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
-It's suggested that you go through these exercises in order.
+
 
 ### Prerequisites
 
@@ -57,7 +59,7 @@ It's suggested that you go through these exercises in order.
   - In the `Target container` field, input `churn` as the container name
   - Click the `Create` button
 4. Download dataset `bank-churn.csv` from Github
-  - Use a new brower tab to access dataset: https://github.com/mlhubca/lab/blob/master/churn/bank-churn.csv
+  - Use a new brower tab to access dataset: https://github.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv
   - Right-click the `Raw` button on the toolbar, and select `Save Link As...` or `Save Content As...` (depending on your browser)
 5. Upload dataset `bank-churn.csv` to your project
   - On DSX, open your project
@@ -90,10 +92,11 @@ Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplo
   - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
   - On the `New Notebook` page, select `From URL` tab
   - In the `Name` field, input `Churn Prediction` as the notebook name
-  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
+  - In the `Notebook URL` field, input this URL: `https://raw.githubusercontent.com/mlhubca/lab/master/bank-churn/bank-churn-prediction-with-scikit-learn-TensorFlow.ipynb`
   - Click the `Create Notebook` button
   
-2. Execute the cell one by one by pressing Ctrl + Enter or selecting menu `Run -> Run Cells` from the notebook toolbar.
+2. Execute code in the notebook cells
+ - Place cursor in cell and press `Ctrl + Enter` or selecting menu `Run -> Run Cells` from the notebook toolbar.
 
 
 ## Exercise 2: Creating a model using machine learning flow
@@ -104,7 +107,7 @@ Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplo
 
 **Technology**
 
-SPSS Modelor, Feature Selection, Auto Classifier, Field Operations, Grapic
+SPSS Modelor, feature selection, auto classifier, data audit, field operations, grapic output
 
 **Steps**
 
@@ -143,7 +146,15 @@ SPSS Modelor, Feature Selection, Auto Classifier, Field Operations, Grapic
 
 ## Exercise 3: Creating a model using model builder
 
+*The model builder uses the power of Watson Machine Learning to automatically prepare data and build models.*
+
+**Technology**
+
+Watson Machine Learning, auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
+
 ![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
+
+**Steps**
 
 1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
 2) On the "New model" page
