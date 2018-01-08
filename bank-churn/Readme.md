@@ -89,7 +89,7 @@ This notebook guides you throught the common machine learning workflow:
 
 ## Exercise 2: Creating a model using machine learning flow
 
-![](https://github.com/mlhubca/lab/blob/master/tennis/images/PlayTennisFlow.png)
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-flow.png)
 
 1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
 2) On the Create Flow page,
@@ -124,9 +124,9 @@ This notebook guides you throught the common machine learning workflow:
     - Top Decision Rules
     - Tree Diagram
 
-## Exercise 2: Creating a model using model builder
+## Exercise 3: Creating a model using model builder
 
-![](https://github.com/mlhubca/lab/blob/master/tennis/images/ModelBuilder.png)
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/model-builder.png)
 
 1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
 2) On the "New model" page
