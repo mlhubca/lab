@@ -119,15 +119,15 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 #### Creating a new flow
 1) Add a new flow using `New flow` button or from the "Add to project" dropdown, select "SPSS Modeler flow"
 2) On the Create Flow page,
-    - Specify a name, e.g. "Bank Churn Flow"
-    - Select "**IBM SPSS Modeler**" Runtime
+    - Specify a name, e.g. `Bank Churn Flow`
+    - Select `**IBM SPSS Modeler**` Runtime
     - Click "Create Flow"
 
 #### Loading data
 3) Drag and drop node `bank-churn.csv` from the Files list to the flow
 4) Click Palette icon (first icon on the toolbar) to show node palette
 
-#### Data audit
+#### Auditing data
 5) Add `Data Audit` node from the `Outputs` list on the platte
 6) Connect file `bank-churn.csv` node to `Data Audit` node
 7) Run `Data Audit` node to generate output
@@ -177,7 +177,7 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 
 **Technology**
 
-Watson Machine Learning, auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
+Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
 
 ![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-auto-model.png)
 
@@ -189,6 +189,32 @@ Watson Machine Learning, auto data preparation (ADP), Cognitive Assistant for Da
     - **Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server**
      - Select a Spark Service or use the default service
      - Use the default `Automatic` method
+     - Click `Create` button
+3) In the `Select Data` stage, select data asset `bank-churn.csv`
+4) In the `Train` stage, 
+     - Select `CHURN (Integer)` as the Label col
+     - Select `All (defaul)` as the Feature columns
+     - Select technique `Binary Classification`
+     - Use default Validation split (Train: 60, Test: 20, Holdout:20)
+5) In the `Evaluate` stage, save the model
+6) Review the model details
+7) On the Deployments tab, add an Online deployment, specify a name as `Bank Churn Online`
+8) View the details of the online deployment
+
+## Exercise 4 (Optional): Creating a model using model builder in manual mode
+
+*The model builder in manual model allows you to select and evaluate multiple machine learning models*
+
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
+
+**Steps**
+
+1) Add a new model using `New model` button or from the `Add to project` dropdown, select `Model`
+2) On the `New model` page
+    - Specify a model name, e.g. Bank Churn Model
+    - **Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service. Press the `Reload` button after you provision a new machine learning server**
+     - Select a Spark Service or use the default service
+     - Use the default `Manual` method
      - Click `Create` button
 3) In the `Select Data` stage, select data asset `bank-churn.csv`
 4) In the `Train` stage, 
@@ -209,15 +235,11 @@ Watson Machine Learning, auto data preparation (ADP), Cognitive Assistant for Da
      
      - Use suggested technique `Binary Classification`
      - Use default Validation split (Train: 60, Test: 20, Holdout:20)
-5) In the `Evaluate` stage, save the model
+     - Click `Add Estimators` to add following estimators (machine learning algorthms)
+        - Logistic Regression
+        - Decision Tree Classifier
+        - Random Forest Classifier
+5) In the `Evaluate` stage, select the estimator that has the best performance and save the model
 6) Review the model details
-7) On the Deployments tab, add an Online deployment, specify a name as `Bank Churn Online`
-8) View the details of the online deployment
-
-## Exercise 4 (Optional): Creating a model using model builder in manual mode
-
-*The model builder in manual model allows you to select and evaluate multiple machine learning models*
-
-![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
 
 
