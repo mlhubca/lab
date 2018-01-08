@@ -129,7 +129,7 @@ This notebook guides you throught the common machine learning workflow:
 
 ## Exercise 3: Creating a model using model builder
 
-![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/model-builder.png)
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/bank-churn-model.png)
 
 1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
 2) On the "New model" page
