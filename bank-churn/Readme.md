@@ -47,36 +47,31 @@ This tutorial takes you step-by-step through the process of creating machine lea
 
 - [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-1-creating-a-model-using-a-notebook)
 
-This notebook guides you through the common machine learning workflow:
+  This notebook guides you through the common machine learning workflow:
+   - Data acquisition
+   - Data exploration & visualization
+   - Data preparation
+   - Model training
+   - Model evaluation
+   - Model application
 
- - Data acquisition
- - Data exploration & visualization
- - Data preparation
- - Model training
- - Model evaluation
- - Model application
-
-**Technology**
-
-Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
+  **Technology:** Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
 
 - [Exercise 2: Creating a model using machine learning flow](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-2-creating-a-model-using-machine-learning-flow)
 
-*Machine learning flow is a graphical representation of data, by using the Flow Editor to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file in object storage.*
+   *Machine learning flow is a graphical representation of data, by using the Flow Editor to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file in object storage.*
 
-**Technology**
-SPSS Modeler, feature selection, auto classifier, data audit, field operations, data visualization 
+   **Technology:** SPSS Modeler, feature selection, auto classifier, data audit, field operations, data visualization 
 
 - [Exercise 3: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
-*The model builder uses the power of Watson Machine Learning to automatically prepare data and build models.*
+   *The model builder uses the power of Watson Machine Learning to automatically prepare data and build models.*
 
-**Technology**
-Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
+   **Technology:** Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
 
 - [Exercise 4 (Optional): Creating a model using model builder in manual mode](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-4-optional-creating-a-model-using-model-builder-in-manual-mode)
 
-*The model builder in manual model allows you to select and evaluate multiple machine learning models*
+   *The model builder in manual model allows you to select and evaluate multiple machine learning models*
 
 
 ### Prerequisites
