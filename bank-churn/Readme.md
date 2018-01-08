@@ -67,7 +67,10 @@ It's suggested that you go through these exercises in order.
 
 
 ## Exercise 1: Creating a model using a notebook
-  
+
+* Technologies *
+Python, Spark 2.1, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
+
 1. Import a new notebook from a URL to the project
   - On DSX, open your project
   - Click the `Add to project` dropdown and select `Notebook` from the dropdown menu
