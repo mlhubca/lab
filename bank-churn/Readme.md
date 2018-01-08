@@ -54,6 +54,7 @@ This tutorial takes you step-by-step through the process of creating machine lea
    - Model training
    - Model evaluation
    - Model application
+  
   **Technology:** Python, Apache Spark, Jupyter notebook, Scikit-learn, TensorFlow, Pandas, matplotlib, Brunel
 
 - [Exercise 2: Creating a model using machine learning flow](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-2-creating-a-model-using-machine-learning-flow)
@@ -69,6 +70,7 @@ This tutorial takes you step-by-step through the process of creating machine lea
    **Technology:** Watson Machine Learning, Auto data preparation (ADP), Cognitive Assistant for Data Scientists (CADS)
 
 - [Exercise 4 (Optional): Creating a model using model builder in manual mode](https://github.com/mlhubca/lab/blob/master/bank-churn/Readme.md#exercise-4-optional-creating-a-model-using-model-builder-in-manual-mode)
+  
   *The model builder in manual model allows you to select and evaluate multiple machine learning models*
 
 
