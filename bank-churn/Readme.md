@@ -74,6 +74,8 @@ This tutorial takes you step-by-step through the process of creating machine lea
 
 *Notebook is an interactive web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.* 
 
+![](https://github.com/mlhubca/lab/blob/master/bank-churn/images/notebook.png)
+
 This notebook guides you through the common machine learning workflow:
 
 - Data acquisition
