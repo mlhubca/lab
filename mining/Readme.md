@@ -1,14 +1,19 @@
 
-## Predict the Success of Bank Telemarketing
+## Predicting rock facies (classes of rocks) from well log data
 
-- The data is related with direct marketing campaigns of a banking institution. The marketing campaigns were based on phone calls.  
-- The dataset has 4521 rows and 17 columns.
-- The input variables (16 columns) include:
-   - Client data: age, job, marital, education, load info
-   - Last contact of the current campaign: contact type, when, duration
-   - Other attributes: number of contacts of current campaign, number of contacts of previous campaign, outcome of previous campaign
+Well log data is recorded either during drilling operations or after the drilling via tools either on the drill string or wireline tools descended into the well. Typically, geoscientists would take the logs and make correlations by hand. They would have to draw lines from log to log to get a holistic view of the rock type/facies, their characteristics, and their content. This can get tedious in mature fields and is prone to likely misinterpretation in new fields.
 
-- The output variable (desired target):
-- subscribed: has the client subscribed a term deposit? (binary: ‘yes’, ‘no’)
 
-The classification goal is to predict if the client will subscribe a term deposit.
+### Goal
+Train a machine learning model that is able to predict the facies for wells not in the training set.
+
+
+### Data set
+The data set we will use comes from University of Kansas. This dataset was taken from nine wells with 3232 examples, consisting of a set of seven predictor variables and a rock facies (class).
+
+### Benefits
+More accurate rock facies classification
+Reduce costs and time, and improve productivity
+
+
+
