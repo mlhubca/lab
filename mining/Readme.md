@@ -15,24 +15,24 @@ Reduce costs and time, and improve productivity
 The data set we will use comes from University of Kansas. This dataset was taken from nine wells with 3232 examples, consisting of a set of seven predictor variables and a rock facies (class).
 
 *Features:*
-GR: gamma ray (GR)
-ILD_log10: resistivity logging (ILD_log10)
-PE: photoelectric effect (PE) 
-DeltaPHI: neutron-density porosity difference 
-PHIND: average neutron-density porosity
-NM_M: nonmarine-marine indicator 
-RELPOS:  relative position 
+- GR: gamma ray (GR)
+- ILD_log10: resistivity logging (ILD_log10)
+- PE: photoelectric effect (PE) 
+- DeltaPHI: neutron-density porosity difference 
+- PHIND: average neutron-density porosity
+- NM_M: nonmarine-marine indicator 
+- RELPOS:  relative position 
 
 *Rock facies:*
-Nonmarine sandstone (SS)
-Nonmarine coarse siltstone (CSiS)
-Nonmarine fine siltstone (FSiS)
-Marine siltstone and shale (Sish)
-Mudstone (limestone) (MS)
-Wackestone (limestone) (WS)
-Dolomite (D)
-Packstone-grainstone (limestone) (PS)
-Phylloid-algal bafflestone (limestone) (BS)
+- Nonmarine sandstone (SS)
+- Nonmarine coarse siltstone (CSiS)
+- Nonmarine fine siltstone (FSiS)
+- Marine siltstone and shale (Sish)
+- Mudstone (limestone) (MS)
+- Wackestone (limestone) (WS)
+- Dolomite (D)
+- Packstone-grainstone (limestone) (PS)
+- Phylloid-algal bafflestone (limestone) (BS)
 
 
 
