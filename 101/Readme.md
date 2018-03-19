@@ -59,7 +59,7 @@ def __iter__(self): return 0
 # The following code accesses a file in your IBM Cloud Object Storage. It includes your credentials.
 # You might want to remove those credentials before you share your notebook.
 client_4d0a1baf7c2d4528be3a7696716f4836 = ibm_boto3.client(service_name='s3',
-    ibm_api_key_id='-cNeD8bYaZl_hW1OofQRjanOhDUXZ-jViUTATOFWu0Yq',
+    ibm_api_key_id='-cNeD8bYaZl_hW1OofQRjanOhDUXZ-jViUTATOFWu0Yq*',
     ibm_auth_endpoint="https://iam.ng.bluemix.net/oidc/token",
     config=Config(signature_version='oauth'),
     endpoint_url='https://s3-api.us-geo.objectstorage.service.networklayer.com')
@@ -83,7 +83,6 @@ from pyspark.ml.feature import OneHotEncoder, StringIndexer, IndexToString
 from pyspark.ml.linalg import Vectors
 from pyspark.ml.feature import VectorAssembler
 from pyspark.ml.classification import RandomForestClassifier
-from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 from pyspark.ml.evaluation import BinaryClassificationEvaluator
 from pyspark.ml import Pipeline, Model
 ```
