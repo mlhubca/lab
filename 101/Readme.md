@@ -166,7 +166,7 @@ new_predictions.select("predictedLabel").show()
 ```
 ## Exercise 2: Creating a flow using SPSS Modeler
 
-![](https://github.com/mlhubca/lab/blob/master/101/images/titanic-flow.png)
+![](https://github.com/mlhubca/lab/blob/master/101/titanic-flow.png)
 
 1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
 2) On the Create Flow page,
@@ -179,22 +179,19 @@ new_predictions.select("predictedLabel").show()
 6) Connect node "titanic.csv" to node "Type"
 7) Righ click node "Type", select "Open",
     - Add all fields to the Types list
-    - Select field `Survivied`, modify the Role as Target
+    - Select field `Survived`, modify the Role as Target
 8) Select node "Partition" from "Field Opartions", drag and drop the node to the flow
 9) Connect node "Type" to node "Partition"
 10) Righ click node "Partition", select "Open" 
     - Specify 85 for the Training partition size (%)
     - Specify 15 for the Testing partition size (%)
-11) Select node "C5.0" from Modeling, drag and drop the node to the flow
-12) Righ click node "C5.0", select "Open",
-    - Select Play for the Target
-    - Select the rest of the fields for Input
-13) Righ click node "C5.0", select "Run"
+11) Select node "Random Trees" from Modeling, drag and drop the node to the flow
+13) Righ click node "Random Trees", select "Run"
 14) Select node "Analysis" from "Outputs", drag and drop the node to the flow
-15) Connect the generated node "Play" to node "Analysis"
+15) Connect the generated node "Servived" to node "Analysis"
 16) Righ click node "Analysis", select "Run".
-17) Open "Analysis of [Play]" to view the results
-18) Back to "Play Tennis Flow", right click the generated node "Play", select View Model
+17) Open "Analysis of [Survived]" to view the results
+18) Back to "Predict Survivial", right click the generated node "Survived", select View Model
 19) View the model details
     - Model Information
     - Predictor Importance
@@ -204,29 +201,26 @@ new_predictions.select("predictedLabel").show()
 
 ## Exercise 3: Creating a model using model builder
 
-![](https://github.com/mlhubca/lab/blob/master/101/images/titanic-model.png)
+![](https://github.com/mlhubca/lab/blob/master/101/titanic-model.png)
 
 1) Add a new model using "add models" button or from the "Add to project" dropdown, select "Model"
 2) On the "New model" page
-    - Specify the model name, e.g. Play Tennis
+    - Specify the model name, e.g. Titanic Model
     - Select a Machine Learning Service. If you don't have a machine learning service, follow the instructions to provision a machine learning service
      - Select a Spark Service or use the default service
      - Use the default "Automatic" method
      - Click "Create" button
-3) In the Select Data stage, select data asset "tennis.csv"
+3) In the Select Data stage, select data asset `titanic.csv`
 4) In the Train stage, 
-     - Select "Play (String)" as the label col
+     - Select "Survived (Integer)" as the label col
      - Use default "All (default) as the feature columns
      - Use suggested "Binary Classification"
      - Use default validation split
 5) In the Evaluate stage, save the model
 6) Review the model details
-7) On the Deploayments tab, add an Online deployment, specify a name as "Play Tennis Online"
+7) On the Deploayments tab, add an Online deployment, specify a name as "Titanic Online"
 8) View the details of the online deployment
-9) On "Test API" tab, specify the input data, and predict the value of Play
-     - Outlook: rain
-     - Temperature: hot
-     - Humidity: normal
-     - Wind: strong
+9) On "Test API" tab, specify the input data, and predict the value of `Survived`
+
 
 
