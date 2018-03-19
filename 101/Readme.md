@@ -130,16 +130,11 @@ model = pipeline_.fit(train_data)
 ```
 In [9]
 ```python
-# Fit the pipeline to the training dataset.
-model = pipeline_.fit(train_data)
-```
-In [11]
-```python
 # Make predictions on the testing dataset.
 predictions = model.transform(test_data)
 ```
 
-In [12]
+In [10]
 ```python
 # Evaluate the performance of the decision tree classifier.
 evaluator = BinaryClassificationEvaluator(labelCol="label", rawPredictionCol="rawPrediction", metricName="areaUnderROC")
@@ -148,7 +143,7 @@ accuracy = evaluator.evaluate(predictions)
 print("Accuracy = %g" % accuracy)
 ```
 
-In [13]
+In [11]
 ```python
 # Create two unseen instances of passengers.
 new_data = [{'Pclass':1, 'Sex':'female', 'Age':26, 'SibSp':0, 'Parch':0, 'Fare':20},
@@ -158,7 +153,7 @@ new_df = spark.createDataFrame(new_data)
 new_df.show()
 ```
 
-In [14]
+In [12]
 ```python
 # Make a new prediction on the unseen instance.
 new_predictions = model.transform(new_df)
@@ -170,7 +165,7 @@ new_predictions.select("predictedLabel").show()
 
 1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
 2) On the Create Flow page,
-    - Specify a name, e.g. "Predict Survivial"
+    - Specify a name, e.g. "Predict Survival"
     - Select "IBM SPSS Modeler" Runtime
     - Click "Create Flow"
 3) Drag and drop node "titanic.csv" from the Files list to the flow
