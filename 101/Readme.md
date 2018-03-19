@@ -1,76 +1,48 @@
-# Machine Learning Lab Exercises - Play Tennis
+# Machine Learning Lab Exercises - Predict Titanic Survivors
 
-![](https://github.com/mlhubca/lab/blob/master/tennis/images/tennis.jpeg)
+![alt text](http://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg)
 
 ## Introduction
 
-In these lab exercises, you will learn how to create machine learning models in a notebook, via model builder wizard, and using Flow. You will also learn how to use open source technologies to visualize data and automatically select the best algorithm. All the tools and technologies used in the exercises are readily available on IBM Data Science Experience (DSX).
+In these lab exercises, you will learn how to create machine learning models in a notebook, via model builder wizard, and using SPSS Modeler Flow. You will also learn how to use open source technologies to visualize data and automatically select the best algorithm. All the tools and technologies used in the exercises are readily available on IBM Data Science Experience (DSX).
 
 IBM Data Science Experience (DSX) is a comprehensive Data Science development framework. You can find more details and sign up for 30 day trial at https://datascience.ibm.com/.
 
 ### Exercise Summary
 
-- [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-- [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-2-creating-a-model-using-model-builder)
-- [Exercise 3: Creating a flow using Canvas](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-3-creating-a-flow-using-canvas)
-- [Exercise 4: Adding visualizations to the notebook](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-4-adding-visualizations-to-the-notebook)
-- [Exercise 5: Automating algnorthm selection using CADS (IBM Cognitive Assistant for Data Scientists)](https://github.com/mlhubca/lab/blob/master/tennis/Readme.md#exercise-5-automating-algnorthm-selection-using-cads-ibm-cognitive-assistant-for-data-scientists)
+- [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-1-creating-a-model-using-a-notebook)
+- [Exercise 3: Creating a flow using SPSS Modeler](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss)
+- [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
 It's suggested that you go through these exercises in order.
 
 
 ### Story
 
-You and a friend generally meet up in the morning at a local tennis court to play. However, whether you play or not depends on the weather (Outlook, Temperature, Humidity, Wind). So you'd like to write a program that, depending on the weather, can help you decide whether you should go to the courts or just call in and say that you probably won't play. This data set can be used for many supervised learning algorithms, which can help visualize the concepts. 
+The sinking of the RMS Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
 
+One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
 
-| Outlook|Temperature|Humidity|  Wind|Play|
-|--------|-----------|--------|------|----|
-|   sunny|        hot|    high|strong|  no|
-|   sunny|        hot|    high|  weak|  no|
-|overcast|        hot|    high|  weak| yes|
-|    rain|       mild|    high|  weak| yes|
-|    rain|       cool|  normal|  weak| yes|
-|    rain|       cool|  normal|strong|  no|
-|overcast|       cool|  normal|strong| yes|
-|   sunny|       mild|    high|  weak|  no|
-|   sunny|       cool|  normal|  weak| yes|
-|    rain|       mild|  normal|  weak| yes|
-|   sunny|       mild|  normal|strong| yes|
-|overcast|       mild|    high|strong| yes|
-|overcast|        hot|  normal|  weak| yes|
-|    rain|       mild|    high|strong|  no|
-
-
-### Basic concepts
-
-- A dataset from which the model is to be built.
-- Each column is an attribute.
-- Each row is an example (instance).
-- The attribute `Play` is the variable to be learned. 
-- The possible labels of each example are `yes` and `no`.
-- Goal: build a model to predict unseen instances, e.g.: `{rain, hot, normal, strong}`
+In this challenge, we ask you to complete the analysis of what sorts of people were likely to survive. In particular, we ask you to apply the tools of machine learning to predict which passengers survived the tragedy.
 
 
 ### Prerequisites
 
 - Sign up and login to DSX: https://datascience.ibm.com/
-- Create a new project "Play Tennis"
-- Download file `tennis.csv` to your local machine
-    - Go to <https://github.com/mlhubca/lab/blob/master/tennis/tennis.csv>
-    - In the top right, righ click the Raw button
-    - Save as ...
-- Upload file `tennis.csv` to project "Play Tennis"
+- Create a new DSX project "Titanic"
+ Download file `titanic.csv` to your local machine (Right click and select `Save Link as...`)
+    - [titanic.csv](https://raw.githubusercontent.com/mlhubca/lab/master/101/titanic.csv)
+- Upload file `tennis.csv` to the DSX project
 
 
 
 ## Exercise 1: Creating a model using a notebook
 
 
-1) Add a new notebook using language Python 2 with Spark 2.0
-2) Add code to access file `tennis.csv` from the notebook
+1) Add a new notebook in language Python 3.x with Spark 2.x
+2) Add code to access file `titian.csv` from the notebook
     - Open Find and Add Data pane from the Notebook Toolbar
-    - Find `tennis.csv` file, select "Insert SparkSession DataFrame" from "Insert to code" dropdown
+    - Find `titian.csv` file, select "Insert Pandas DataFrame" from "Insert to code" dropdown
     - The code will be inserted to the first cell of the notebook, as:
     
 In [1]
