@@ -12,16 +12,16 @@ IBM Data Science Experience (DSX) is a comprehensive Data Science development fr
 
 ### Exercise Summary
 
-- [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-- [Exercise 3: Creating a flow using SPSS Modeler](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss-modeler)
-- [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
+- [Exercise 1: Creating a model using a notebook (for programmer)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-1-creating-a-model-using-a-notebook)
+- [Exercise 3: Creating a flow using SPSS Modeler (for non-programmer)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss-modeler)
+- [Exercise 2: Creating a model using model builder (automation)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
 It's suggested that you go through these exercises in order.
 
 
 ### Story
 
-The sinking of the RMS Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
+The sinking of the Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This sensational tragedy shocked the international community and led to better safety regulations for ships.
 
 One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
 
