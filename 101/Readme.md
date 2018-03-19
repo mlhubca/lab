@@ -1,4 +1,6 @@
-# Machine Learning Lab Exercises - Predict Titanic Survivors
+# Predict Titanic Survivors
+
+*Machine Learning 101 Lab Exercises*
 
 ![alt text](http://upload.wikimedia.org/wikipedia/commons/6/6e/St%C3%B6wer_Titanic.jpg)
 
@@ -11,7 +13,7 @@ IBM Data Science Experience (DSX) is a comprehensive Data Science development fr
 ### Exercise Summary
 
 - [Exercise 1: Creating a model using a notebook](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-- [Exercise 3: Creating a flow using SPSS Modeler](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss)
+- [Exercise 3: Creating a flow using SPSS Modeler](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss-modeler)
 - [Exercise 2: Creating a model using model builder](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
 It's suggested that you go through these exercises in order.
