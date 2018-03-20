@@ -145,8 +145,8 @@ print("Accuracy = %g" % accuracy)
 In [11]
 ```python
 # Create two unseen instances of passengers.
-new_data = [{'Pclass':1, 'Sex':'female', 'Age':26, 'SibSp':0, 'Parch':0, 'Fare':20},
-            {'Pclass':3,'Sex': 'male', 'Age':26, 'SibSp':0, 'Parch':0, 'Fare':20}]
+new_data = [{'Pclass':3, 'Sex':'male', 'Age':20, 'SibSp':0, 'Parch':0, 'Fare':20},
+            {'Pclass':1,'Sex': 'female', 'Age':17, 'SibSp':0, 'Parch':1, 'Fare':20}]
 
 new_df = spark.createDataFrame(new_data)
 new_df.show()
@@ -156,7 +156,7 @@ In [12]
 ```python
 # Make a new prediction on the unseen instance.
 new_predictions = model.transform(new_df)
-new_predictions.select("predictedLabel").show()
+new_predictions.select("prediction", "probability").show()
 ```
 ## Exercise 2: Creating a flow using SPSS Modeler
 
