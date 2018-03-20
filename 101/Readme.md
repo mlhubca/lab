@@ -13,10 +13,8 @@ IBM Data Science Experience (DSX) is a comprehensive Data Science development fr
 ### Exercise Summary
 
 - [Exercise 1: Creating a model using a notebook (for programmer)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-1-creating-a-model-using-a-notebook)
-- [Exercise 3: Creating a flow using SPSS Modeler (for non-programmer)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss-modeler)
-- [Exercise 2: Creating a model using model builder (automation)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
-
-It's suggested that you go through these exercises in order.
+- [Exercise 2: Creating a flow using SPSS Modeler (for non-programmer)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-2-creating-a-flow-using-spss-modeler)
+- [Exercise 3: Creating a model using model builder (automation)](https://github.com/mlhubca/lab/blob/master/101/Readme.md#exercise-3-creating-a-model-using-model-builder)
 
 
 ### Story
