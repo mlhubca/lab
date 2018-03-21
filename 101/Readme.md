@@ -125,7 +125,7 @@ pipeline = Pipeline(stages=[sex_indexer, features_assembler, estimator])
 In [8]
 ```python
 # Fit the pipeline to the training dataset.
-model = pipeline_.fit(train_data)
+model = pipeline.fit(train_data)
 ```
 In [9]
 ```python
