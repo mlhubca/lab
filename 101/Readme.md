@@ -136,7 +136,7 @@ predictions = model.transform(test_data)
 In [10]
 ```python
 # Evaluate the performance of the decision tree classifier.
-evaluator = BinaryClassificationEvaluator(labelCol="label", rawPredictionCol="rawPrediction", metricName="areaUnderROC")
+evaluator = BinaryClassificationEvaluator(labelCol="Survived", rawPredictionCol="rawPrediction", metricName="areaUnderROC")
 accuracy = evaluator.evaluate(predictions)
 
 print("Accuracy = %g" % accuracy)
