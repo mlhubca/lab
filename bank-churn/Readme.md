@@ -94,7 +94,7 @@ This tutorial takes you step-by-step through the process of creating machine lea
 4. Download dataset `bank-churn.csv` from Github
 (Right click and select `Save Link as...`)
     - [bank-churn.csv](https://raw.githubusercontent.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv)
-
+(Right click and select `Save Link as...`)
 5. Upload dataset `bank-churn.csv` to your project
     - On DSX, open your project
     - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
@@ -140,15 +140,16 @@ SPSS Modeler, feature selection, auto classifier, data audit, field operations, 
 **Steps**
 
 #### Creating a new flow
-1) Add a new flow using `New flow` button or from the "Add to project" dropdown, select "SPSS Modeler flow"
+1) Add a new flow using `New flow` button or from the "Add to project" dropdown, select "Modeler flow"
 2) On the Create Flow page,
     - Specify a name, e.g. `Bank Churn Flow`
+    - **Select `Modeler Flow`**
     - **Select `IBM SPSS Modeler` Runtime**
     - Click "Create Flow"
 
 #### Loading data
-3) Drag and drop node `bank-churn.csv` from the Files list to the flow
-4) Click Palette icon (first icon on the toolbar) to show node palette
+3) Click Palette icon (first icon on the toolbar) to show node palette
+4) Add `Data Asset` node from the `Import` list on the palette. Open `Data Asset` node, use `Change data asset` to select `bank-churn.csv` as the Source location. Save the change.
 
 #### Checking data quality
 5) Add `Data Audit` node from the `Outputs` list on the palette
