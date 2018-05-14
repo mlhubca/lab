@@ -92,8 +92,9 @@ This tutorial takes you step-by-step through the process of creating machine lea
     - In the `Target container` field, input `churn` as the container name
     - Click the `Create` button
 4. Download dataset `bank-churn.csv` from Github
-    - Use a new browser tab to access dataset: https://github.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv
-    - Right-click the `Raw` button on the toolbar, and select `Save Link As...` or `Save Content As...` (depending on your browser)
+(Right click and select `Save Link as...`)
+    - [bank-churn.csv](https://raw.githubusercontent.com/mlhubca/lab/blob/master/bank-churn/bank-churn.csv)
+
 5. Upload dataset `bank-churn.csv` to your project
     - On DSX, open your project
     - Click the `Add to project` dropdown and select `Data asset` from the dropdown menu
