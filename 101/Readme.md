@@ -158,22 +158,21 @@ In [12]
 new_predictions = model.transform(new_df)
 new_predictions.select("prediction", "probability").show()
 ```
-## Exercise 2: Creating a flow using SPSS Modeler
+## Exercise 2: Creating a flow using Modeler flow
 
 ![](https://github.com/mlhubca/lab/blob/master/101/titanic-flow.png)
 
-1) Add a new flow using "add flows" button or from the "Add to project" dropdown, select "Flow"
+1) Add a new flow from the "Add to project" dropdown, select "Modeler flow"
 2) On the Create Flow page,
     - Specify a name, e.g. "Predict Survival"
     - Select "IBM SPSS Modeler" Runtime
-    - Click "Create Flow"
-3) Drag and drop node "titanic.csv" from the Files list to the flow
-4) Click the big plus "+" icon to show node palette
+    - Click "Create"
+3) From the node palette, select section "Import", drag and drop node "Data Asset" to the flow
+4) Double cleck on "Data Asset" on the flow, select "titanic.csv" from the Files list to the flow
 5) Select node "Type" from "Field Operations", drag and drop the node to the flow
 6) Connect node "titanic.csv" to node "Type"
 7) Righ click node "Type", select "Open",
-    - Add all fields to the Types list
-    - Select field `Survived`, modify the Role as Target
+    - Select field `Survived`, modify the Role as Target, and modify the Measure as Categorical
 8) Select node "Partition" from "Field Opartions", drag and drop the node to the flow
 9) Connect node "Type" to node "Partition"
 10) Righ click node "Partition", select "Open" 
