@@ -162,6 +162,7 @@ new_predictions.select("prediction", "probability").show()
 
 ![](https://github.com/mlhubca/lab/blob/master/101/titanic-flow.png)
 
+
 1) Add a new flow from the "Add to project" dropdown, select "Modeler flow"
 2) On the Create Flow page,
     - Specify a name, e.g. "Predict Survival"
@@ -171,20 +172,20 @@ new_predictions.select("prediction", "probability").show()
 4) Double cleck on "Data Asset" on the flow, select "titanic.csv" from the Files list to the flow
 5) Select node "Type" from "Field Operations", drag and drop the node to the flow
 6) Connect node "titanic.csv" to node "Type"
-7) Righ click node "Type", select "Open",
+7) Right click node "Type", select "Open",
     - Select field `Survived`, modify the Role as Target, and modify the Measure as Categorical
-8) Select node "Partition" from "Field Opartions", drag and drop the node to the flow
+8) Select node "Partition" from "Field Operations", drag and drop the node to the flow
 9) Connect node "Type" to node "Partition"
-10) Righ click node "Partition", select "Open" 
+10) Right click node "Partition", select "Open" 
     - Specify 85 for the Training partition size (%)
     - Specify 15 for the Testing partition size (%)
 11) Select node "Random Trees" from Modeling, drag and drop the node to the flow
-13) Righ click node "Random Trees", select "Run"
+13) Right click node "Random Trees", select "Run"
 14) Select node "Analysis" from "Outputs", drag and drop the node to the flow
 15) Connect the generated node "Servived" to node "Analysis"
-16) Righ click node "Analysis", select "Run".
+16) Right click node "Analysis", select "Run".
 17) Open "Analysis of [Survived]" to view the results
-18) Back to "Predict Survivial", right click the generated node "Survived", select View Model
+18) Back to "Predict Survival", right click the generated node "Survived", select View Model
 19) View the model details
     - Model Information
     - Predictor Importance
